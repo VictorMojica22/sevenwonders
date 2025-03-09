@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Las 7 Maravillas del Mundo</title>
+</head>
+<body>
+    
+    <header 
+    id="landing-header"
+    class="landing-section py-3 px-9 flex items-center fixed top-0 w-full justify-between z-40 text-white animate-fade-up"
+    >
+    <div class="flex flex-grow justify-start ">
+        <a class="transition-color duration-500 text-bold py-1 px-4 cursor-pointer"
+            id="MurallaChina"
+        >   
+            Maravillas
+        </a>
+    </div>
+    
+    <nav >
+        <div>
+            <ul 
+                class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 justify-center"
+                id="landing-header"
+            >
+                <li><a href="#MurallaChina">Maravilla 1</a></li>
+                <li><a href="#ChichenItza">Maravilla 2</a></li>
+                <li><a href="#Petra">Maravilla 3</a></li>
+                <li><a href="#MachuPicchu">Maravilla 4</a></li>
+                <li><a href="#CristoRedentor">Maravilla 5</a></li>
+                <li><a href="#Coliseo">Maravilla 6</a></li>
+                <li><a href="#TajMahal">Maravilla 7</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    
+    <nav class="flex flex-grow justify-end">
+        <ul class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 justify-center">
+            <li><a href="#">Cuenta</a></li>
+            <li><a href="#">Menú</a></li>
+        </ul>
+    </nav>
+    
+    <div 
+        id="menu-backdrop"
+        class='
+            absolute bg-gray-400 backdrop-blur-lg rounded translate-x-[var(--left)]
+            translate-y-[var(--top)] w-[var(--width)] h-[var(--height)]
+            transition-all duration-500 ease-in-out opacity-0 -z-10 left-0 top-0 
+        '
+    >
+    </div>
+    </header>
+   
+
+    <main class="snap-y snap-mandatory w-full h-screen overflow-auto">
+
+
+        <!-- La Gran Muralla China -->
+        <section 
+            id="MurallaChina"
+            class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden animate-fade-up snap-center"
+            data-header-color='black'
+        >
+    
+            <div class="z-30 relative h-full flex flex-col">
+                <header class="flex flex-col">
+                    <h2 class='text-white pt-40 text-[40px] font-medium'>
+                        La Gran Muralla China
+                    </h2>
+                    <p class='text-white text-sm'>
+                        Sistema de defensa contra las invasiones
+                    </p>
+                </header>
+    
+                <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20 ">
+                    <div >
+                        <a 
+                            class='border-[3px] border-white bg-white/5 backdrop-blur-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors'
+                            href="#">
+                            Conoce más aquí
+                        </a>
+                    </div>
+                </footer>
+            </div>
+    
+            <div class="absolute top-0 bottom-0 h-screen w-screen z-10">
+                <video 
+    
+                    class="object-center object-cover h-full w-full mx-auto" 
+                    autoplay 
+                    muted 
+                    loop 
+                    src="./Public/LaGranMurallaChina.webm">
+                </video>
+            </div>
+        </section>
+    
+        <!-- Chichen Itza -->
+        <section 
+            class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden animate-fade-up snap-center"
+            data-header-color="white"
+            id="ChichenItza"
+        >
+    
+            <div class="z-30 relative h-full flex flex-col">
+                <header class="flex flex-col">
+                    <h2 class="text-white pt-40 text-[40px] font-medium">Chichen Itzá, Mexico</h2>
+                    <p class="text-white text-sm">Ciudad maya de la península de Yucatán</p>
+                </header>
+    
+                <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20 ">
+                    <div class="">
+                        <a 
+                            class="border-[3px] border-white bg-white/5 backdrop-blur-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors" href="#">
+                            Conoce más aquí
+                        </a>
+                    </div>
+                </footer>
+            </div>
+    
+    
+            <div class="absolute top-0 bottom-0 h-full w-screen z-10">
+                <video 
+                    class="object-center object-cover h-full w-full" 
+                    autoplay 
+                    muted 
+                    loop 
+                    src="./Public/ChichenItza.webm">
+                </video>
+            </div>
+        </section> 
+
+        <!-- Petra  -->
+        <section 
+            class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden animate-fade-up snap-center"
+            data-header-color='white'
+            id="Petra"
+        >
+
+            <div class="z-30 relative h-full flex flex-col">
+                <header class="flex flex-col">
+                    <h2 class='text-white pt-40 text-[40px] font-medium'>
+                        Petra, Jordania
+                    </h2>
+                    <p class='text-white text-sm'>
+                        Encrucijada de caravanas comerciales
+                    </p>
+                </header>
+
+                <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20 ">
+                    <div >
+                        <a 
+                            class='border-[3px] border-white bg-white/5 backdrop-blur-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors'
+                            href="#">
+                            Conoce más aquí
+                        </a>
+                    </div>
+                </footer>
+            </div>
+
+
+            <div class="absolute top-0 bottom-0 h-full w-full z-10">
+                <video 
+
+                    class="object-center object-cover h-full w-full" 
+                    autoplay 
+                    muted 
+                    loop 
+                    src="./Public/Petra.webm">
+                </video>
+            </div>
+        </section>
+
+        <!-- Machu Picchu -->
+        <section 
+            class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden animate-fade-up snap-center"
+            data-header-color='black'
+            id="MachuPicchu"
+        >
+
+            <div class="z-30 relative h-full flex flex-col">
+                <header class="flex flex-col">
+                    <h2 class='text-white pt-40 text-[40px] font-medium'>
+                        Machu Picchu, Perú
+                    </h2>
+                    <p class='text-white text-sm'>
+                        Antigua ciudad inca
+                    </p>
+                </header>
+
+                <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20 ">
+                    <div >
+                        <a 
+                            class='border-[3px] border-white bg-white/5 backdrop-blur-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors'
+                            href="#">
+                            Conoce más aquí
+                        </a>
+                    </div>
+                </footer>
+            </div>
+
+
+            <div class="absolute top-0 bottom-0 h-full w-full z-10">
+                <video 
+
+                    class="object-center object-cover h-full w-full" 
+                    autoplay 
+                    muted 
+                    loop 
+                    src="./Public/MachuPicchu.webm">
+                </video>
+            </div>
+        </section>
+
+        <!-- Cristo Redentor -->
+        <section 
+            class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden animate-fade-up snap-center"
+            data-header-color='black'
+            id="CristoRedentor"
+        >
+
+            <div class="z-30 relative h-full flex flex-col">
+                <header class="flex flex-col">
+                    <h2 class='text-white pt-40 text-[40px] font-medium'>
+                        Cristo Redentor, Brasil
+                    </h2>
+                    <p class='text-white text-sm'>
+                        Escultura art Déco más grande del mundo. 
+                    </p>
+                </header>
+
+                <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20 ">
+                    <div >
+                        <a 
+                            class='border-[3px] border-white bg-white/5 backdrop-blur-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors'
+                            href="#">
+                            Conoce más aquí
+                        </a>
+                    </div>
+                </footer>
+            </div>
+
+
+            <div class="absolute top-0 bottom-0 h-full w-full z-10">
+                <video 
+
+                    class="object-center object-cover h-full w-full" 
+                    autoplay 
+                    muted 
+                    loop 
+                    src="./Public/CristoRedentor.webm">
+                </video>
+            </div>
+        </section>
+
+        <!-- Coliseo -->
+        <section 
+            class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden animate-fade-up snap-center"
+            data-header-color='white'
+            id="Coliseo"
+        >
+
+            <div class="z-30 relative h-full flex flex-col">
+                <header class="flex flex-col">
+                    <h2 class='text-white pt-40 text-[40px] font-medium'>
+                        Coliseo, Italia
+                    </h2>
+                    <p class='text-white text-sm'>
+                        Anfiteatro construido en el siglo I.  
+                    </p>
+                </header>
+
+                <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20 ">
+                    <div >
+                        <a 
+                            class='border-[3px] border-white bg-white/5 backdrop-blur-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors'
+                            href="#">
+                            Conoce más aquí
+                        </a>
+                    </div>
+                </footer>
+            </div>
+
+
+            <div class="absolute top-0 bottom-0 h-full w-full z-10">
+                <video 
+
+                    class="object-center object-cover h-full w-full" 
+                    autoplay 
+                    muted 
+                    loop 
+                    src="./Public/Coliseo.webm">
+                </video>
+            </div>
+        </section>
+
+        <!-- Taj Mahal -->
+        <section 
+            class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden animate-fade-up snap-center"
+            data-header-color='white'
+            id="TajMahal"
+        >
+
+            <div class="z-30 relative h-full flex flex-col">
+                <header class="flex flex-col">
+                    <h2 class='text-white pt-40 text-[40px] font-medium'>
+                        Taj, Mahal, India
+                    </h2>
+                    <p class='text-white text-sm'>
+                        Mausoleo de mármol blanco. 
+                    </p>
+                </header>
+
+                <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20 ">
+                    <div >
+                        <a 
+                            class='border-[3px] border-white bg-white/5 backdrop-blur-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors'
+                            href="#">
+                            Conoce más aquí
+                        </a>
+                    </div>
+                </footer>
+            </div>
+
+
+            <div class="absolute top-0 bottom-0 h-full w-full z-10">
+                <video 
+
+                    class="object-center object-cover h-full w-full" 
+                    autoplay 
+                    muted 
+                    loop 
+                    src="./Public/TajMahal.webm">
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- Menu Responsive -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Sombreado del header -->
+    <script>
+        const listItem = document.querySelectorAll('#landing-header li');
+        const menuBackdrop = document.querySelector('#menu-backdrop');
+
+            listItem.forEach((item) => {
+            item.addEventListener('mouseenter', () => {
+                const { left, top, width, height } = item.getBoundingClientRect();
+
+                menuBackdrop.style.setProperty('--left', `${left}px`)
+                menuBackdrop.style.setProperty('--top', `${top}px`)
+                menuBackdrop.style.setProperty('--width', `${width}px`)
+                menuBackdrop.style.setProperty('--height', `${height}px`)
+
+                menuBackdrop.style.opacity = '1'
+                menuBackdrop.style.visibility = 'visible'
+            })
+
+            item.addEventListener('mouseleave', () => {
+                menuBackdrop.style.opacity = '0'
+                menuBackdrop.style.visibility = 'hidden'
+            })
+
+        })
+    </script>
+
+    <!-- El cambio del color del header -->
+    <script>
+        const headerEl = document.querySelector('#landing-header');
+
+        const observerOptions = {
+            root: null, 
+            rootMargin: '0px', // En cuanto se vea el elemento
+            threshold: 0.90, // Porcentaje de visibilidad
+        }
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach((entry) => {
+                const { isIntersecting } = entry;
+                if( isIntersecting ) {
+                    const color = entry.target.getAttribute('data-header-color');
+                    headerEl.style.color = color;
+                }
+            })
+        }, observerOptions);
+
+        const sectionElement = document.querySelectorAll('.landing-section');
+        sectionElement.forEach((section) => observer.observe(section));
+    </script>
+</body>
+</html>
